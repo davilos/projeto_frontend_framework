@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Cadastro e feedback</title>
+</head>
+<body>
+    <header>
+        <h1>Formulário de cadastro e feedback</h1>
+        <p>Preencha o formulário abaixo e dê sua opinião!</p>
+        <button id="increaseFont"><i class="fas fa-search-plus"></i></button>
+        <button id="menuButton"><i class="fas fa-bars"></i></button>
+    </header>
+
+    <div class="menu" id="menu">
+        <a href="javascript:void(0)" class="closebtn" id="closeBtn">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="pag02.html">Galeria de imagens</a>
+        <a href="pag03.html">Cadastro e feedback</a>
+    </div>
+
+    <main class="register">
+        <div class="form">
+            <h2>Cadastro</h2>
+            <form>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <div class="feedback">
+            <h2>Dê o seu feedback</h2>
+            <textarea id="feedback" name="feedback" rows="4" placeholder="O que pode melhorar no site?"></textarea>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Uninassau ADS 2MB</p>
+    </footer>
+
+    <script src="js/fontSizeScript.js"></script>
+    <script src="js/menuScript.js"></script>
+</body>
+</html>
