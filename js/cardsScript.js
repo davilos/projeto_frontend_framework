@@ -2,17 +2,17 @@ const cards = [
     {
         titulo: "Darth Vader",
         foto: "img/cards/darth_vader.jpg",
-        descricao: "O maior vilão da história."
+        descricao: "Um Jedi caído que se tornou o Lorde Sith mais temido da Galáxia."
     },
     {
         titulo: "Yoda",
         foto: "img/cards/yoda.jpg",
-        descricao: "O maior Mestre Jedi."
+        descricao: "Um dos mais sábios e poderosos Jedi de todos os tempos."
     },
     {
         titulo: "Luke Skywalker",
         foto: "img/cards/luke_skywalker.jpg",
-        descricao: "O Jedi mais forte."
+        descricao: "Um dos Jedi mais lendários do universo de Star Wars."
     },
 ];
 

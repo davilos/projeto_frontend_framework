@@ -1,18 +1,23 @@
 const increaseFontButton = document.getElementById('increaseFont');
-const textElements = document.querySelectorAll('*');
-const maxSize = 32;
 
-const increaseFontSize = () => {
-    textElements.forEach(element => {
-        const currentSize = parseInt(window.getComputedStyle(element).fontSize);
-        const newSize = currentSize + 2;
+const increaseFontSize = (element) => {
+    const currentSize = parseInt(window.getComputedStyle(element).fontSize);
+    const maxSize = 26;
+    const newSize = currentSize + 2;
 
-        if (newSize < maxSize) {
-            element.style.fontSize = newSize + 'px';
-
-        }
-    });
+    if (newSize < maxSize) {
+        element.style.fontSize = newSize + 'px';
+    }
 };
 
-increaseFontButton.addEventListener('click', increaseFontSize);
-
+increaseFontButton.addEventListener('click', () => {
+    setTimeout(() => {
+        const elements = document.querySelectorAll('section.member, main');
+        elements.forEach(element => {
+            const textElements = element.querySelectorAll('*');
+            textElements.forEach(element => {
+                increaseFontSize(element);
+            });
+        });
+    }, 100);
+});
